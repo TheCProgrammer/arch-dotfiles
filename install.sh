@@ -3,6 +3,9 @@
 # requires the user to be in the 'dotfiles' directory
 
 # don't re-install packages that are already installed
+
+echo "This application requires root (sudo) permissions to install packages"
+
 sudo pacman --needed -S dolphin dunst picom rofi qutebrowser nvim kitty i3-wm i3blocks i3lock i3status xss-lock
 
 # i3 config
