@@ -30,8 +30,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-# set the background image
-exec --no-startup-id "feh --bg-scale ~/bgimages/archwallpaper.png"
+# set the background image (change this)
+#exec --no-startup-id "feh --bg-scale ~/bgimages/archwallpaper.png"
 
 # start dunst (a notification manager)
 exec --no-startup-id dunst
