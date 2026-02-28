@@ -29,7 +29,7 @@ cp -r ./neovim/* ~/.config/nvim/ # -r to not ommit (not copy) directories but we
 
 	read -p "Do you want to remove un-needed files and cleanup? (y/n) " yn
     case $yn in
-        [Yy]* ) echo "rm -rf ~/dotfiles/"; break;;
+        [Yy]* ) rm -rf ~/dotfiles/; break;;
         [Nn]* ) echo "Quitting..."; exit;;
         * ) exit;;
     esac
