@@ -1,9 +1,12 @@
 syntax = on
 vim.o.number = true
 
+
 vim.opt.clipboard = "unnamedplus"	-- copy to the system clipboard (globally)
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+expandtab = true -- indent with spaces instead of tabs
 
 -- lazy.nvim plugin manager
 
