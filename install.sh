@@ -2,9 +2,7 @@
 # didn't put the --noconfirm flag so the user knows what is going to get downloaded
 # requires the user to be in the 'dotfiles' directory
 
-# don't re-install packages that are already installed
-
-echo "This application requires root (sudo) permissions to install packages"
+# don't re-install packages that are already installed (--needed) 
 
 sudo pacman --needed -S dolphin dunst picom rofi qutebrowser nvim kitty i3-wm i3blocks i3lock i3status xss-lock
 
@@ -23,7 +21,7 @@ cp ./i3/etc/i3blocks.conf ~/.config/i3blocks/config
 # neovim config
 
 mkdir -p ~/.config/nvim
-cp -r ./neovim/* ~/.config/nvim/ # -r to not ommit (not copy) directories but we want the lua/ directory to be copied
+cp -r ./neovim/* ~/.config/nvim/ # don't omit directories
 
 # check if the user wants to delete those files or not
 
